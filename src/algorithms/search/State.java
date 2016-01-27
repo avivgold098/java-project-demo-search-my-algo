@@ -1,8 +1,7 @@
 package algorithms.search;
 /**
  * 
- * @author gabay eldar
- * State - y,z,x cost and who is his father 
+ * this class is presnted some state in our search problem
  * @param <T> should be type of Position
  */
 public class State <T> implements Comparable<State<T>>{
@@ -11,13 +10,13 @@ public class State <T> implements Comparable<State<T>>{
 	private double cost;
 	private State<T> cameFrom;
 	/**
-	 * our default ctor
+	 * our default ctoor
 	 */
 	public State()
 	{
 	}
 	/**
-	 * opy ctor of our class 
+	 * copy ctor of our class that copied one state to ur state and and set came from 
 	 * @param s the state we copied
 	 */
 	public State(T state)
@@ -76,7 +75,7 @@ public class State <T> implements Comparable<State<T>>{
 		return cost;
 	}
 	/**
-	 * this method set our cost value witn antoher value
+	 * this method set our cost value with another value
 	 *@param cost- the other value
 	 */
 	public void setCost(double cost)
